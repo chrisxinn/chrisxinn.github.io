@@ -6,10 +6,10 @@
 }
 
 #dino {
-  width: 50px;
+  width: 70px;
   height: 50px;
-  background-image: url(img/nyan-cat.gif);
-  background-size: 50px 50px;
+  background-image: url(img/nyan-catt.gif);
+  background-size: 70px 50px;
   position: relative;
   top: 150px;
 }
@@ -41,14 +41,14 @@
 }
 
 #cactus {
-  width: 20px;
-  height: 40px;
+  width: 40px;
+  height: 60px;
   position: relative;
-  top: 110px;
+  top: 90px;
   left: 580px;
 
   background-image: url("img/cactus.png");
-  background-size: 20px 40px;
+  background-size: 40px 60px;
 
   animation: block 1s infinite linear;
 }
