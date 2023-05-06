@@ -1,29 +1,44 @@
-body {
-  padding-left: 11em;
-  font-family: Georgia, "Times New Roman",Times, serif;
-  color: purple;
-  background-color: #d8da3d }
-  ul.navbar {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 2em;
-  left: 1em;
-  width: 9em }
-h1 {font-family: Helvetica, Geneva, Arial,SunSans-Regular,sans-serif}
-ul.navbar li {
-  background: white;
-  margin: 0.5em 0;
-  padding: 0.3em;
-  border-right: 1em solid black }
-ul.navbar a {
-    text-decoration: none }
-  a:link {
-    color: blue }
-  a:visited {
-    color: purple }
-  address {
-    margin-top: 1em;
-    padding-top: 1em;
-    border-top: thin dotted }
+*{
+    padding: 5px;
+    margin: 5px;
+    overflow-x: hidden;
+}
+.game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position:relative;
+    top: 150px;
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+}
