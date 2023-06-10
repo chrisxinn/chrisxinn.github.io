@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            color: #FFFFFF;
+            background-image: url(img/bgWork.jpg);
+            background-size: auto;
+        }
+
+        .jumbotron {
+            background: linear-gradient(to bottom, #000000, #000000);
+            color: #FFFFFF;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: bold;
+            mix-blend-mode: screen;
+        }
+
+        .category-container {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .thumbnail {
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        .thumbnail:hover {
+            opacity: 0.7;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="jumbotron text-center">
+        <h1 class="display-4"><img src="img/iconWork.png">My Work</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Studio</h2>
+                <div class="category-container">
+                    <div class="thumbnail" style="background-image: url(myPhotos/studio1.jpg)" data-toggle="modal" data-target="#studioModal"></div>
+                </div>
+            </div>
+            <div class="col">
+                <h2>Travel</h2>
+                <div class="category-container">
+                    <div class="thumbnail" style="background-image: url(myPhotos/travel1.jpg)" data-toggle="modal" data-target="#travelModal1"></div>
+                    <div class="thumbnail" style="background-image: url(myPhotos/travel2.jpg)" data-toggle="modal" data-target="#travelModal2"></div>
+                    <div class="thumbnail" style="background-image: url(myPhotos/travel3.jpg)" data-toggle="modal" data-target="#travelModal"></div>
+                    <div class="thumbnail" style="background-image: url(myPhotos/travel4.jpg)" data-toggle="modal" data-target="#travelModal"></div>
+                    <div class="thumbnail" style="background-image: url(myPhotos/travel5.jpg)" data-toggle="modal" data-target="#travelModal"></div>
+                    <div class="thumbnail" style="background-image: url(myPhotos/travel6.jpg)" data-toggle="modal" data-target="#travelModal"></div>
+                    <div class="thumbnail" style="background-image: url(myPhotos/travel7.jpg)" data-toggle="modal" data-target="#travelModal"></div>
+                    <div class="thumbnail" style="background-image: url(myPhotos/travel8.jpg)" data-toggle="modal" data-target="#travelModal"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Studio Modal -->
+        <div class="modal fade" id="studioModal" tabindex="-1" role="dialog" aria-labelledby="studioModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="myPhotos/studio1.jpg" class="modal-image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Travel Modal -->
+        <div class="modal fade" id="travelModal1" tabindex="-1" role="dialog" aria-labelledby="travelModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="myPhotos/travel1.jpg" class="modal-image">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="travelModal2" tabindex="-1" role="dialog" aria-labelledby="travelModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="myPhotos/travel2.jpg" class="modal-image">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h2>Daily</h2>
+                <div class="category-container">
+                    <div class="thumbnail" style="background-image: url(img/pet1.jpg)" data-toggle="modal" data-target="#dailyModal"></div>
+                    <div class="thumbnail" style="background-image: url(img/pet2.jpg)" data-toggle="modal" data-target="#dailyModal"></div>
+                    <div class="thumbnail" style="background-image: url(img/pet3.jpg)" data-toggle="modal" data-target="#dailyModal"></div>
+                </div>
+            </div>
+            <div class="col">
+                <h2>Event</h2>
+                <div class="category-container">
+                    <div class="thumbnail" style="background-image: url(img/studio1.jpg)" data-toggle="modal" data-target="#eventModal"></div>
+                    <div class="thumbnail" style="background-image: url(img/studio2.jpg)" data-toggle="modal" data-target="#eventModal"></div>
+                    <div class="thumbnail" style="background-image: url(img/studio3.jpg)" data-toggle="modal" data-target="#eventModal"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daily Modal -->
+        <div class="modal fade" id="dailyModal" tabindex="-1" role="dialog" aria-labelledby="dailyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="" class="modal-image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Modal -->
+        <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="" class="modal-image">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col">
+                <h2>Video</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.thumbnail').click(function() {
+                var imageUrl = $(this).css('background-image').replace(/url\(['"]?(.*?)['"]?\)/i, "$1");
+                $(this).closest('.modal').find('.modal-image').attr('src', imageUrl);
+            });
+        });
+    </script>
+</body>
+
+</html>
